@@ -1,18 +1,18 @@
-import Hamburger from "./Hamburger.jsx"
 import logoupworkedited from "../assets/logoupworkedited.png"
-import Cart from "./cart.jsx"
+import cart from"../assets/cart.png"
+import hamburger from "../assets/hamburger.png"
+import "./Navbar.css"
 export default function Navbar(){
     return(
-<header>
     <nav>
-        <ul>
-            <li><Hamburger/></li>
-            <li><Cart/></li>
-        </ul>
-        <ul>
+       
+        <ul className="logo">
             <li><img src={logoupworkedited} alt="logo" /></li>
         </ul>
+        <ul className="icons">
+            <li><img src={cart} alt=""  /></li>
+            <li><img src={hamburger} alt="" /></li>
+        </ul>
     </nav>
-</header>
     );
 }
